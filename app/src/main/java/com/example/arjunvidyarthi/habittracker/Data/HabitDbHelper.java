@@ -15,7 +15,8 @@ public class HabitDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + HabitContract.HabitEntry.TABLE_NAME + " (" +
                     HabitContract.HabitEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                     HabitContract.HabitEntry.COLUMN_HABIT_NAME + " TEXT NOT NULL," +
-                    HabitContract.HabitEntry.COLUMN_HABIT_DATE + " TEXT NOT NULL);";
+                    HabitContract.HabitEntry.COLUMN_HABIT_DATE + " TEXT NOT NULL, "+
+                    HabitContract.HabitEntry.COLUMN_HABIT_REPEAT + " INTEGER NOT NULL DEFAULT 0);";
 
 
     public static final int DATABASE_VERSION  = 1;
